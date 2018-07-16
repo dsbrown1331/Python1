@@ -1,0 +1,5 @@
+print("Hello World!")
+print('Python is fun!')
+print('We can make the computer talk!')
+print("You can print a single quote like this, 'hi'.")
+print('You can also print double quotes, "hey there!", inside single quotes, "voila".')

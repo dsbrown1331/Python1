@@ -1,0 +1,10 @@
+Play with each of the assignment operators in a python terminal
+What do they do?
+
+=
++=
+-=
+*=	
+/=
+%=
+

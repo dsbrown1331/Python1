@@ -1,0 +1,15 @@
+Play with each of the math operators below in a python terminal. Type next to each symbol name a brief description of what the symbol does.
+
+
+ + plus
+ - minus
+ / slash
+ // double slash
+ * asterisk
+ ** double asterisk
+ % percent
+ < less-than
+ > greater-than
+ <= less-than-or-equal
+ >= greater-than-or-equal
+ == equal to

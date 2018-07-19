@@ -1,5 +1,5 @@
 #program that waits until user enters "done" to quit
-while(True):
+while True:
     line = input('> ')
     if line == "done":
         print("Bye bye")

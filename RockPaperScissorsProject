@@ -1,0 +1,7 @@
+Step 1: Rock paper scissors, play one round against random computer opponent
+Step 2: Make it so you play 6 times in a row and output the score: +1 for each win 0 for each tie, -1 for each loss
+Step 3: Make the game repeatable: after showing score ask if they want to play again
+Step 4: Add a difficulty setting at beginning: 
+	Easy (computer always plays Rock). 
+	Medium ( computer alternates between Rock and Paper).
+	Hard (computer plays randomly)

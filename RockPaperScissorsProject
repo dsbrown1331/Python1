@@ -5,3 +5,4 @@ Step 4: Add a difficulty setting at beginning:
 	Easy (computer always plays Rock). 
 	Medium ( computer alternates between Rock and Paper).
 	Hard (computer plays randomly)
+	Insane (computer always wins)

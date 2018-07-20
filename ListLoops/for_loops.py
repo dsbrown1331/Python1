@@ -10,7 +10,6 @@ for fruit in fruits:
     print("A fruit of type:", fruit)
 
 # also we can go through mixed lists too
-# notice we have to use %r since we don't know what's in it
 for i in change:
     print("I got", i)
 

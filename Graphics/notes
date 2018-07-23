@@ -1,0 +1,79 @@
+You can copy and paste this code.
+
+First install pygame (https://www.pygame.org/wiki/GettingStarted).
+
+Scroll down until you find the appropriate instructions for your
+Operating System.
+
+Let me know if you have problems. After install you should be able to run
+python3 -m pygame.examples.aliens
+in a terminal and see a space invaders game popup.
+
+
+Mac: Might need to install some extra software
+
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/
+install/master/install)"
+
+brew install sdl sdl_image sdl_mixer sdl_ttf portmidi
+
+Ubuntu 16.04 (https://stackoverflow.com/questions/42707566/how-to-install-pygame-for-python3-5-in-ubuntu16-04)
+
+---------------
+starter_code.py
+
+
+------------
+moving_circle.py
+
+Google pygame clock.tick() to see what it does.
+
+Play around with x_step and y_step and the argument to clock.tick() to see
+what happens.
+
+Try to get the ball to bounce off of the walls.
+Hint: You need to check if the ball has gone off of the screen and then
+have the ball start moving in the other direction.
+
+If you've spent more than 20 minutes trying to get this to work, then
+move on to the next task to see my solution.
+
+
+-------------
+bouncing_circle.py
+
+Run this program and see what happens.
+
+Go through the code and make sure you understand how the ball "bounces" off
+of the walls.
+
+What happens if you start the circle at position (50,50)?
+What causes this behavior? Try slowing down the simulation and using print()
+statements to see what is happening.
+
+Add another circle and start it at a different position and make it bounce
+off the walls. Can you use a list and a for loop and a function to avoid copying and pasting
+the code that updates the circles.
+
+Now check for collisions between the two circles and have them bounce off
+of each other too.
+
+
+------------
+falling_circles.py
+
+copy the code and run it to see what happens.
+
+Read though each line of code and try to understand what is happening
+
+Change values to see what affect they have on the code.
+
+Find all the TODO's in the code and complete them.
+
+--------------
+driving_circle.py
+
+copy the code and run it to see what happens.
+Try pressing the left arrow key...
+
+Complete the TODO's in the code

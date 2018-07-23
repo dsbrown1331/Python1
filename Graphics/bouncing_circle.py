@@ -24,10 +24,10 @@ def main():
     screen_height = 500
     screen = pygame.display.set_mode((screen_width, screen_height))
     screen.fill(white)
-    circle_x = 100
-    circle_y = 300
+    circle_x = 50
+    circle_y = 50
     circle_rad = 50
-    step_x = 2
+    step_x = 5
     step_y = 2
     pygame.draw.circle(screen, red, (circle_x,circle_y), circle_rad)
     # define a variable to control the main loop
@@ -35,7 +35,7 @@ def main():
 
     # main loop
     while running:
-        msElapsed = clock.tick(50)
+        msElapsed = clock.tick(30)
         screen.fill(white)
         # event handling, gets all event from the eventqueue
         for event in pygame.event.get():
@@ -43,6 +43,21 @@ def main():
             if event.type == pygame.QUIT:
                 # change the value to False, to exit the main loop
                 running = False
+        #To check if we've bumped into a wall
+        #check if the y-coordinate is too large
+        if circle_y + circle_rad >= screen_height:
+            step_y = -step_y
+        #check if the y-coordinate is too small
+        elif circle_y - circle_rad <= 0:
+            step_y = -step_y
+        #check if the x_coordinate is too large
+        if circle_x + circle_rad >= screen_width:
+            step_x = -step_x
+        #check if the x-coordinate is too small
+        elif circle_x - circle_rad <= 0:
+            step_x = -step_x
+
+
         #update position of circle each time
         circle_x += step_x
         circle_y += step_y

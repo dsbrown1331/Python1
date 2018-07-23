@@ -10,6 +10,29 @@ white = (255,255,255)
 black = (0,0,0)
 pink = (255,200,200)
 
+#define circles by a list of [x,y] coordinates
+
+#TODO: create a variable num_circles and start the
+#simulation with that many bubbles at random positions
+#TODO: make the bubbles smaller and blue to look like raindrops
+#TODO: play with the framerate using clock.tick and step_y to make the
+#rain drops fall at a speed that looks natural.
+circle_centers = [[100,300],[200,100],[300,400],[400,50]]
+circle_rad = 50
+screen_width = 500
+screen_height = 500
+step_y = 2
+
+def update_circle_positions(screen):
+    for center in circle_centers:
+        #get y-coordinate
+        center[1] += step_y
+        #check to see if circle has fallen off the screen
+        if center[1] - circle_rad > screen_height:
+            #TODO: randomly set the x-coordanate each type we reset a bubble
+            center[1] = -circle_rad
+        pygame.draw.circle(screen, red, center, circle_rad)
+
 
 # define a main function
 def main():
@@ -20,16 +43,10 @@ def main():
     pygame.display.set_caption("minimal program")
 
     # create a surface on screen that has the size of 240 x 180
-    screen_width = 500
-    screen_height = 500
+
     screen = pygame.display.set_mode((screen_width, screen_height))
     screen.fill(white)
-    circle_x = 100
-    circle_y = 300
-    circle_rad = 50
-    step_x = 2
-    step_y = 2
-    pygame.draw.circle(screen, red, (circle_x,circle_y), circle_rad)
+
     # define a variable to control the main loop
     running = True
 
@@ -43,10 +60,8 @@ def main():
             if event.type == pygame.QUIT:
                 # change the value to False, to exit the main loop
                 running = False
-        #update position of circle each time
-        circle_x += step_x
-        circle_y += step_y
-        pygame.draw.circle(screen, red, (circle_x, circle_y), circle_rad)
+        #update position of circles each time
+        update_circle_positions(screen)
 
         pygame.display.update()
 

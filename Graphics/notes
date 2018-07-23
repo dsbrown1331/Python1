@@ -1,5 +1,6 @@
-You can copy and paste this code.
-
+===========================================
+Getting started
+========================================
 First install pygame (https://www.pygame.org/wiki/GettingStarted).
 
 Scroll down until you find the appropriate instructions for your
@@ -18,10 +19,18 @@ install/master/install)"
 brew install sdl sdl_image sdl_mixer sdl_ttf portmidi
 
 Ubuntu 16.04 (https://stackoverflow.com/questions/42707566/how-to-install-pygame-for-python3-5-in-ubuntu16-04)
+===================================
+===================================
+
+Note: You can copy and paste any of this code if you want.
+
 
 ---------------
 starter_code.py
 
+TODO: Go to the website listed in the code and read up on pygame.
+
+Add more shapes of different colors to make a picture.
 
 ------------
 moving_circle.py

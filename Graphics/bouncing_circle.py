@@ -24,10 +24,10 @@ def main():
     screen_height = 500
     screen = pygame.display.set_mode((screen_width, screen_height))
     screen.fill(white)
-    circle_x = 50
-    circle_y = 50
+    circle_x = 100
+    circle_y = 200
     circle_rad = 50
-    step_x = 5
+    step_x = 2
     step_y = 2
     pygame.draw.circle(screen, red, (circle_x,circle_y), circle_rad)
     # define a variable to control the main loop

@@ -1,0 +1,3 @@
+Hi there!
+Don't forget to add a new line escape character.Otherwise you'll still be writing to the same line...
+		you can also use the '\t' escape to get a tab

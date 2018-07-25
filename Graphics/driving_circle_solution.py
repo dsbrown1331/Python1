@@ -50,20 +50,34 @@ def main():
             if event.type == pygame.QUIT:
                 # change the value to False, to exit the main loop
                 running = False
-
+            #check if a key was pressed
+            # if event.type == pygame.KEYDOWN:
+            #     if event.key == pygame.K_LEFT:
+            #         x_pos -= speed
+            #     if event.key == pygame.K_RIGHT:
+            #         x_pos += speed
+            #     if event.key == pygame.K_UP:
+            #         y_pos -= speed
+            #     if event.key == pygame.K_DOWN:
+            #         y_pos += speed
         #update position of circles each time
-        #TODO: finish the controls for the game
-        #TODO: make it so if you move off the left side you appear on the
-        #right side and if you move off the bottom you appear on the top
         keys=pygame.key.get_pressed()
         if keys[pygame.K_LEFT]:
             x_pos -= speed
+            if x_pos < 0:
+                x_pos = screen_width
         if keys[pygame.K_RIGHT]:
-            pass
+            x_pos += speed
+            if x_pos > screen_width:
+                x_pos = 0
         if keys[pygame.K_UP]:
-            pass
+            y_pos -= speed
+            if y_pos < 0:
+                y_pos = screen_height
         if keys[pygame.K_DOWN]:
-            pass
+            y_pos += speed
+            if y_pos > screen_height:
+                y_pos = 0
         pygame.draw.circle(screen, blue, (x_pos, y_pos), radius)
 
         pygame.display.update()

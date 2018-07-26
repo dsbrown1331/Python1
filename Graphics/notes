@@ -32,6 +32,8 @@ TODO: Go to the website listed in the code and read up on pygame.
 
 Add more shapes of different colors to make a picture.
 
+When you have a picture. Show it to me and then continue below.
+
 ------------
 moving_circle.py
 
@@ -86,3 +88,42 @@ copy the code and run it to see what happens.
 Try pressing the left arrow key...
 
 Complete the TODO's in the code
+
+
+----------------
+updating_score.py
+
+Look through this code and run it.
+It is the same as the starter code for falling_circles.py
+except there is a score at the top of the screen.
+The score is set up so it is -1 each time a circle hits the bottom.
+
+Read (https://www.programiz.com/python-programming/global-keyword)
+to learn about the global key word used in line 30.
+
+-----------------
+Now I want you to create your own game. If you're stuck,
+here's my idea.
+
+Create a bubble popper game where the person playing
+gets to drive a circle around and pop other circles.
+
+Try to combine driving_circle, falling_circles, and
+updating_score. Make it so when the circle you are driving
+touches another bubble it pops (make it go back to the top of the screen)
+and you get +1 points. If you let a bubble fall you get -1 points.
+Bubbles get reset to a random position at the top whenever they are popped or
+fall to the bottom.
+
+You can check if a bubble should be popped by checking whether
+the distance between the center of the driving circle and the bubble circle
+is less than or equal to the sum of their radii.
+
+Play with the speeds to get good game play.
+
+Good luck!
+
+-------------------------
+
+Work through the Tutorials (https://www.pygame.org/docs/)
+to learn more and use what you learn to create a new game.

@@ -2,7 +2,7 @@ import sys
 
 #if not enough arguments then print error
 if len(sys.argv) != 2:
-    print("usage: python print_function.py python_file")
+    print("usage: python find_function_defs.py python_file")
     exit()
 else:
     try:

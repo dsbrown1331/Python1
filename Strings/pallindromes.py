@@ -1,3 +1,5 @@
+import sys
+
 def is_pallindrome(input_str):
     if len(input_str) < 2:
         return True
@@ -31,4 +33,10 @@ def is_pallindrome3(input_str):
     else:
         return False
 
-print(is_pallindrome3("sracecar"))
+if len(sys.argv) < 2:
+    print("usage: python pallindromes.py string")
+    exit()
+
+input_word = sys.argv[1]
+
+print("{} is a pallindrome".format(input_word), is_pallindrome3(input_word))

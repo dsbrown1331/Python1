@@ -1,0 +1,6 @@
+import random
+
+dice1 = random.randint(1,6)
+dice2 = random.randint(1,6)
+
+print("Dice roll is {} and {}".format(dice1,dice2))

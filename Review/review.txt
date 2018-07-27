@@ -1,0 +1,5 @@
+1. Write a program that uses input() to ask for the day of the day of the
+week and then prints out "Happy ___" where ___ should be replaced by the actual
+day of the week.
+
+2.

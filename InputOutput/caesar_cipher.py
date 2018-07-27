@@ -11,6 +11,10 @@ def encript_char(character, shift):
     shifted_char = chr(unicode_val)
     return shifted_char
 
+#encript an entire file, character by character
+#input arguments are the input and output filenames and the amount to shift
+#characters by for the caesar cipher
+#Note: this will only encript alphabetical characters
 def encript_file(input_filename, output_filename, shift):
     file_reader = open(input_filename)
     file_writer = open(output_filename, "w")
@@ -25,5 +29,6 @@ def encript_file(input_filename, output_filename, shift):
     file_writer.close()
 
 #testing code
-print(encript_char("A",1))
+print(encript_char("a",2))
+print(encript_char("C", 4))
 encript_file("GettysburgAddress.txt", "encripted.txt", 1)

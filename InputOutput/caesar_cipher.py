@@ -29,6 +29,6 @@ def encript_file(input_filename, output_filename, shift):
     file_writer.close()
 
 #testing code
-print(encript_char("a",2))
+print(encript_char("a", 2))
 print(encript_char("C", 4))
 encript_file("GettysburgAddress.txt", "encripted.txt", 1)

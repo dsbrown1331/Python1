@@ -2,4 +2,31 @@
 week and then prints out "Happy ___" where ___ should be replaced by the actual
 day of the week.
 
-2.
+2. Write a program that uses input() to take a floating point number
+and returns the square root of that number
+
+3. Write a program that uses input() to ask for someone's first and last name
+and then prints a greeting to the person using their first and last name
+
+4. Write a program that simulates rolling two 6-sided dice. When you run it
+it should print out the two rolls.
+
+5. Change the program so it rolls a variable number of dice using input()
+
+6. Write and test a function that takes an input string and returns a new string that is
+identical to the input string but where e's are changed to i's and o's are changed to a's
+
+Example: input: "Hello Frodo"
+          output: "Hilla Frada"
+
+7. Change all previous code to use command line arguments rather than input()
+
+8. Create a list of one thing you like to do on each day of the week.
+Example: ["sleep", "eat", "eat", "sleep", "school", "sleep", "eat and sleep"]
+would mean that on Sunday you like to sleep, Monday you like to eat, etc.
+
+Write a program that asks for a day of the week and then prints out what you like to
+do on that day of the week.
+
+Example: input "Saturday" should output something like
+"On Saturday I like to eat and sleep."

@@ -5,9 +5,11 @@ def is_even(integer):
 def is_odd(integer):
     return not is_even(integer)
 
-#testing code
-print("testing math_functions.py")
-print("4 is even", is_even(4))
-print("151 is even", is_even(151))
-print("4 is odd", is_odd(4))
-print("151 is even", is_even(151))
+
+if __name__=="__main__":
+    #testing code
+    print("testing math_functions.py")
+    print("4 is even", is_even(4))
+    print("151 is even", is_even(151))
+    print("4 is odd", is_odd(4))
+    print("151 is even", is_even(151))
